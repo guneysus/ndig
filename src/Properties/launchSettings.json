@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ndig": {
+      "commandName": "Project",
+      "commandLineArgs": "-d google.com -t A"
+    }
+  }
+}

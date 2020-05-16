@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ndig</name>
+    </assembly>
+    <members>
+        <member name="T:ndig.Native.DnsQueryOptions">
+            <summary>
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/cc982162(v=vs.85).aspx
+            </summary>
+        </member>
+        <member name="T:ndig.Native.DnsRecordTypes">
+            <summary>
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/cc982162(v=vs.85).aspx
+            Also see http://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml
+            </summary>
+        </member>
+        <member name="T:ndig.Native.DNS_A_DATA">
+            <summary>
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682044(v=vs.85).aspx
+            </summary>
+        </member>
+        <member name="T:ndig.Native.DNS_FREE_TYPE">
+            <summary>
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682056(v=vs.85).aspx
+            </summary>
+        </member>
+        <member name="T:ndig.Native.DNS_MX_DATA">
+            <summary>
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682070(v=vs.85).aspx
+            </summary>
+        </member>
+        <member name="T:ndig.Native.DNS_PTR_DATA">
+            <summary>
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682080(v=vs.85).aspx
+            </summary>
+        </member>
+        <member name="T:ndig.Native.DNS_RECORD">
+            <summary>
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682082(v=vs.85).aspx
+            These field offsets could be different depending on endianness and bitness
+            </summary>
+        </member>
+        <member name="T:ndig.Native.DNS_RECORD_FLAGS">
+            <summary>
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682084(v=vs.85).aspx
+            </summary>
+        </member>
+        <member name="T:ndig.Native.DNS_TXT_DATA">
+            <summary>
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682109(v=vs.85).aspx
+            </summary>
+        </member>
+        <member name="M:ndig.Native.NativeMethods.DnsQuery(System.String,ndig.Native.DnsRecordTypes,ndig.Native.DnsQueryOptions,System.IntPtr,System.IntPtr@,System.IntPtr)">
+            <summary>
+            Provides a DNS query resolution interface
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682016(v=vs.85).aspx
+            </summary>
+            <param name="lpstrName">A pointer to a string that represents the DNS name to query</param>
+            <param name="wType">A value that represents the Resource Record DNS Record Type that is queried</param>
+            <param name="Options">A value that contains a bitmap of the DNS Query Options to use in the DNS query</param>
+            <param name="pExtra">Reserved for future use and must be set to NULL</param>
+            <param name="ppQueryResultsSet">A pointer to a pointer that points to the list of RRs that comprise the response</param>
+            <param name="pReserved">Reserved for future use and must be set to NULL</param>
+            <returns>Success (0), or the DNS-specific error defined in Winerror.h</returns>
+        </member>
+        <member name="M:ndig.Native.NativeMethods.DnsRecordListFree(System.IntPtr,ndig.Native.DNS_FREE_TYPE)">
+            <summary>
+            Frees memory allocated for DNS records obtained by using the DnsQuery function
+            See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682021(v=vs.85).aspx
+            </summary>
+            <param name="pRecordList">A pointer to the DNS_RECORD structure that contains the list of DNS records to be freed</param>
+            <param name="FreeType">A specifier of how the record list should be freed</param>
+        </member>
+    </members>
+</doc>

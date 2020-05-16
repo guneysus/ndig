@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Ahmed Şeref Güneysu</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/guneysus/ndig</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/guneysus/ndig</RepositoryUrl>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>guneysu.xyz.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\repos\sandbox\p-invoke\PlatformInvoke\ndig\ndig.xml</DocumentationFile>
+    <DefineConstants>TRACE;DNS_MX DNS_TXT</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;DNS_MX DNS_TXT</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ndig.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Update="D:\repos\sandbox\p-invoke\PlatformInvoke\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+</Project>
