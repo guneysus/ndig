@@ -2,7 +2,7 @@
 
 set -ex
 
-dotnet publish .\src\ndig.csproj \
+dotnet publish src/ndig.csproj \
 	--configuration Release \
 	--output build \
 	-p:PublishReadyToRun=true \
