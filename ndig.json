@@ -1,0 +1,8 @@
+{
+  "version": "0.1",
+  "url": "https://github.com/guneysus/ndig/releases/download/v0.1/ndig.exe",
+  "autoupdate": {
+    "url": "https://github.com/guneysus/ndig/releases/download/v$version/ndig.exe"
+  },
+  "bin": "ndig.exe"
+}
