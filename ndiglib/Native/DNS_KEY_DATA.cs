@@ -1,9 +1,10 @@
-﻿namespace ndig.Native
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace ndig.Native
 {
 
 
-#if DNS_KEY
-    /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682061(v=vs.85).aspx
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
@@ -13,6 +14,5 @@
         public byte chProtocol;
         public byte chAlgorithm;
         public IntPtr Key;        // BYTE Key[1];  
-}
-#endif
+	}
 }

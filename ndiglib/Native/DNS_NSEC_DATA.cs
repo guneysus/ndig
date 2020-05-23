@@ -1,6 +1,8 @@
-﻿namespace ndig.Native
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace ndig.Native
 {
-#if DNS_NSEC
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/dd392297(v=vs.85).aspx
     /// </summary>
@@ -12,5 +14,4 @@
         public ushort wPad;
         public IntPtr TypeBitMaps;    // BYTE  TypeBitMaps[1];  
     }
-#endif
 }

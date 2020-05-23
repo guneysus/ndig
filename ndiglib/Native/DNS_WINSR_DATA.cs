@@ -1,7 +1,9 @@
-﻿namespace ndig.Native
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace ndig.Native
 {
 
-#if DNS_WINSR
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682113(v=vs.85).aspx
     /// </summary>
@@ -13,5 +15,4 @@
         public uint dwCacheTimeout;
         public IntPtr pNameResultDomain;    // string  
     }
-#endif
 }

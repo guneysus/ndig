@@ -1,8 +1,10 @@
 ﻿
+using System;
+using System.Runtime.InteropServices;
+
 namespace ndig.Native
 {
 
-#if DNS_NULL
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682074(v=vs.85).aspx
     /// </summary>
@@ -12,5 +14,4 @@ namespace ndig.Native
         public uint dwByteCount;
         public IntPtr Data;           // BYTE  Data[1];  
     }
-#endif
 }

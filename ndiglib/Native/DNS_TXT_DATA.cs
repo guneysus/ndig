@@ -4,7 +4,6 @@ using System.Runtime.InteropServices;
 
 namespace ndig.Native
 {
-#if DNS_TXT
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682109(v=vs.85).aspx
     /// </summary>
@@ -31,5 +30,4 @@ namespace ndig.Native
             }
         } 
     }
-#endif
 }

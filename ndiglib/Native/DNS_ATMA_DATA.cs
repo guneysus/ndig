@@ -1,4 +1,6 @@
 ﻿
+using System.Runtime.InteropServices;
+
 namespace ndig.Native
 {
 
@@ -6,7 +8,6 @@ namespace ndig.Native
     //public const int DNS_ATMA_FORMAT_E164 = 1;
     //public const int DNS_ATMA_FORMAT_AESA = 2;
 
-#if DNS_ATMA
 
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682041(v=vs.85).aspx
@@ -37,6 +38,5 @@ namespace ndig.Native
         public byte Address17;
         public byte Address18;
         public byte Address19; 
-}
-#endif
+	}
 }

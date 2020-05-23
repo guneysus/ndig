@@ -1,6 +1,8 @@
-﻿namespace ndig.Native
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace ndig.Native
 {
-#if DNS_MINFO
 
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682067(v=vs.85).aspx
@@ -10,6 +12,5 @@
     {
         public IntPtr pNameMailbox;     // string
         public IntPtr pNameErrorsMailbox;       // string  
-}
-#endif
+	}
 }

@@ -1,6 +1,8 @@
-﻿namespace ndig.Native
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace ndig.Native
 {
-#if DNS_DS
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/dd392296(v=vs.85).aspx
     /// </summary>
@@ -13,6 +15,5 @@
         public ushort wDigestLength;
         public ushort wPad;
         public IntPtr Digest;         // BYTE Digest[1];  
-}
-#endif
+	}
 }

@@ -3,7 +3,6 @@
     using System;
     using System.Runtime.InteropServices;
 
-#if DNS_MX
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682070(v=vs.85).aspx
     /// </summary>
@@ -15,5 +14,4 @@
         public ushort Pad;
         public string NameExchange { get { return Marshal.PtrToStringAuto(pNameExchange); } } 
     }
-#endif
 }

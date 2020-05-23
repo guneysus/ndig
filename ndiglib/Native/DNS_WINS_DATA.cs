@@ -1,6 +1,7 @@
-﻿namespace ndig.Native
+﻿using System.Runtime.InteropServices;
+
+namespace ndig.Native
 {
-#if DNS_WINS
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682114(v=vs.85).aspx
     /// </summary>
@@ -13,5 +14,4 @@
         public uint cWinsServerCount;
         public uint WinsServers;    // IP4_ADDRESS WinsServers[1];  
     }
-#endif
 }

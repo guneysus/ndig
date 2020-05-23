@@ -9,4 +9,4 @@ dotnet publish src/ndig.csproj \
 	-p:PublishSingleFile=true \
 	-p:PublishTrimmed=true \
 	--self-contained true \
-	--runtime win-x64 
+	--runtime win-x64  

@@ -1,6 +1,8 @@
-﻿namespace ndig.Native
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace ndig.Native
 {
-#if DNS_OPT
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/dd392298(v=vs.85).aspx
     /// </summary>
@@ -11,5 +13,4 @@
         public ushort wPad;
         public IntPtr Data;           // BYTE Data[1];  
     }
-#endif
 }

@@ -1,7 +1,9 @@
-﻿namespace ndig.Native
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace ndig.Native
 {
 
-#if DNS_NXT
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682076(v=vs.85).aspx
     /// </summary>
@@ -12,5 +14,4 @@
         public ushort wNumTypes;
         public IntPtr wTypes;       // WORD  wTypes[1];  
     }
-#endif
 }

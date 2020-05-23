@@ -1,8 +1,10 @@
 ﻿
+using System;
+using System.Runtime.InteropServices;
+
 namespace ndig.Native
 {
 
-#if DNS_TKEY
     /// <summary>
     /// See http://msdn.microsoft.com/en-us/library/windows/desktop/ms682104(v=vs.85).aspx
     /// </summary>
@@ -22,5 +24,4 @@ namespace ndig.Native
         public byte cAlgNameLength;     // UCHAR cAlgNameLength;
         public int bPacketPointers;     // BOOL  bPacketPointers;  
     }
-#endif
 }
