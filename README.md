@@ -1,7 +1,7 @@
 ndig
 ======
 
-DNS Lookup CLI Tool
+dig like simple CLI DNS Lookup tool, implemented with .NET Core
 
 ## Installation
 
