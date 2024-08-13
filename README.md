@@ -3,9 +3,7 @@ ndig
 
 dig like simple CLI DNS Lookup tool, implemented with .NET Core
 
-![logo_1](./img/logo_1.jpg)
-
-![logo_1](./img/logo_2.jpg)
+![logo_1](./img/logo_1_240px.jpg)
 
 
 ## Installation
